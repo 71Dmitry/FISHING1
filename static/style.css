@@ -1,0 +1,155 @@
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.podskazka {
+    justify-content: flex-start;
+}
+
+.buttons {
+position: absolute;
+    display: flex;
+    margin-left: 680px;
+}
+
+.top_button {
+    margin: 0 10px; 
+}
+
+
+
+
+
+.top_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    color: #dae0de;
+    background-color:rgb(10, 53, 110);
+    border: 2px solid #52dddd;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.add_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 30px;
+    font-size: 20px;
+    width: 180px;
+    height: 45px;
+    color: #dae0de;
+    background-color:#1d9936;
+    border: 2px solid #064f15;
+    border-radius: 20px;
+}
+
+.remove_button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-right: 30px;
+    font-size: 20px;
+    width: 100px;
+    height: 45px;
+    color: #dae0de;
+    background-color:#d10015;
+    border: 2px solid #85010f;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.abriviatura {
+    display: flex;
+    align-items: center; /*текст относительно картинки*/ 
+    justify-content: center; /*весь див по центру*/
+}
+.abriviatura img {
+    height: 60px; 
+    margin-left: 10px; /* Добавляем отступ слева от изображения */
+}
+
+.podskazka {
+    display: flex;
+    align-items: center; /*текст относительно картинки*/ 
+    justify-content: center; /*весь див по центру*/
+}
+.podskazka img {
+    height: 60px; 
+    margin-left: 10px; /* Добавляем отступ слева от изображения */
+}
+.mem {
+    position: relative;
+    left: 0;
+    animation: moveLeftRight 10s linear infinite;
+    width: 500px;
+}
+
+@keyframes moveLeftRight {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 685px); /* Поменяйте 200px на ширину вашей картинки */
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes blink {
+        0% { background-color: #ff0000; } /* Красный */
+        25% { background-color: #00ff00; } /* Зеленый */
+        50% { background-color: #0000ff; } /* Синий */
+        75% { background-color: #ffff00; } /* Желтый */
+        100% { background-color: #ff00ff; } /* Фиолетовый */
+      }
+      
+.epilepsia{
+        animation: blink 2s linear infinite;
+      }
+      
+
+.obeme {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 200px;
+        
+      }
+
+@keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+.obeme img {
+        animation: spin 3s linear infinite;
+        width: 500px;
+        border-radius: 50px;
+      }
+    
+.donat {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        animation: colorChange 1s infinite;
+    }
+    
+@keyframes colorChange {
+        0% { color: red; }
+        25% { color: blue; }
+        50% { color: green; }
+        75% { color: orange; }
+        100% { color: purple; }
+    }
+    
